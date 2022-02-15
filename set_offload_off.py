@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 #
-#(C)'2021 by Herby
+#(C)'2022 by Herby and Fortinet
 # V 1.1
-# 2021-12-06
+# 2022-02-15
 #
 import requests
 import time
@@ -188,7 +188,7 @@ def get_session_token():  # and open log files
         print("Enter FortiManager Password: ")#, end='')
         password = getpass.getpass()
     """
-    
+
     data = {"method": "exec", "params": [{"data": {"passwd": password, "user": username}, "url": "sys/login/user"}], "session": "null"}
 
     s = api_call( data )

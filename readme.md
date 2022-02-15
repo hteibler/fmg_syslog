@@ -12,6 +12,10 @@ there are 2 step necessary
 
 ## STEP 2 : install backend service
 
+this service receives any change on FMG via SYSLOG
+and if you add or change a policy,
+the service will immediately disable ASIC offloading of this policy
+
 ### use script "fmg_syslog.py"
 
 and take care
